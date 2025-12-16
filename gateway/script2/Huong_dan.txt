@@ -1,0 +1,28 @@
+Buoc 1: Cai dat python tren windows
+Buoc 2: Cai dat pip tren windows
+Buoc 3: pip install -r requirements.txt
+Buoc 4: Cai wireshark -> Them C:\Program Files\Wireshark vao Enviroment
+Buoc 5: Mo PowerShell -> Chay tshark -D -> Lua chon STT cua interface dung de ket noi voi he thong IoT. Vi du ta co ket qua sau:
+1. \Device\NPF_{91F80FEC-477F-4511-BE9C-8CE65F869DD1} (Local Area Connection* 10)
+2. \Device\NPF_{B061B98E-DFFE-413F-A1CA-EA0A986C6624} (Local Area Connection* 9)
+3. \Device\NPF_{8C08A1DB-5C27-48FD-89EF-8404223E86DF} (Local Area Connection* 8)
+4. \Device\NPF_{BC36826E-7470-47CE-834D-C25078506161} (vEthernet (WSL (Hyper-V firewall)))
+5. \Device\NPF_{E13B75F0-B147-4B11-B9A5-0A9F2FE20700} (vEthernet (Default Switch))
+6. \Device\NPF_{B2BDC8D7-3E21-4ACF-B817-468C07706CB0} (Wi-Fi)
+7. \Device\NPF_{9CD51D43-AF4E-430A-921B-E57340ED3B8D} (VMware Network Adapter VMnet8)
+8. \Device\NPF_{2CB9590C-D63B-4824-A550-0D81EE4666DA} (VMware Network Adapter VMnet1)
+9. \Device\NPF_{9BB2FB66-867A-4AC7-9530-50C0ADD33DA0} (Local Area Connection* 2)
+10. \Device\NPF_{388F4FE0-94F2-4492-8C46-7118A428539E} (Local Area Connection* 1)
+11. \Device\NPF_{DAD128DF-662B-406F-B138-2D62F1677A59} (Ethernet 3)
+12. \Device\NPF_{2281B6CE-9A76-4A7B-B778-6DF483A42BD4} (Ethernet)
+13. \Device\NPF_Loopback (Adapter for loopback traffic capture)
+14. \Device\NPF_{497F87FD-F865-42CA-B7D6-54DFB7F5BF99} (OpenVPN Connect DCO Adapter)
+15. \Device\NPF_{0D713AD0-77D1-45E4-9289-D4CDF63E085A} (Local Area Connection)
+16. \Device\NPF_{FB213747-E4AE-488A-9976-F8AE07E9DA78} (Local Area Connection 2)
+17. etwdump (Event Tracing for Windows (ETW) reader)
+
+Ta lua chon interface 6 vi dung wifi de ket noi voi ESP32.
+
+Buoc 6: Chinh sua gia chi cua INTERFACE trong dump_packet_2.py voi dung stt ban vua nhan dc o buoc tren
+Buoc 7: Mo PowerShell khac voi quyen Admin -> di chuyen den thu muc script2 voi lenh cd "Duong dan den script2"
+Buoc 8: Chay .\data_collect.bat trong powershell

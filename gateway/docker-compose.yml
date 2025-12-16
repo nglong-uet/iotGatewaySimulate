@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2.0
+    container_name: mosquitto
+    restart: always
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+
+  gateway:
+    build:
+      context: .
+    container_name: iot-gateway
+    restart: always
+    depends_on:
+      - mosquitto
+    environment:
+      BACKEND_URL: "https://iot.theman.vn"
+      MQTT_BROKER: "192.168.0.21"
+      MQTT_PORT: 1883
+      GATEWAY_UID: "GATEWAY-001"
+      DEVICE_NAME: "IoT Multi-Sensor Gateway"
+      LOCATION: "Server Room"
+    volumes:
+      - .:/app
+    command: ["python", "gateway.py"]

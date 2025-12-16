@@ -1,0 +1,174 @@
+// esp32-1: receive:
+{
+  "dev_id": "esp32_multi1",
+  "timestamp": 351,
+  "dev_ip": "192.168.4.3",
+  "seq_num": 116,
+  "packet_interval": 3,
+  "dev_status": "normal",
+  "temperature": 28.8,
+  "humidity": 44.7,
+  "rain_status": 1,
+  "rssi": -36,
+  "ssid": "ESP32_AP",
+  "checksum": 236
+}
+//sent:
+{
+  "deviceUid": "GATEWAY-001",
+  "timestamp": 1764255159476,
+  "sensors": [
+    {
+      "sensorUid": "esp32_multi1_dht_temp",
+      "type": "TEMPERATURE",
+      "data": {
+        "temperature": 28.9
+      }
+    },
+    {
+      "sensorUid": "esp32_multi1_dht_hum",
+      "type": "HUMIDITY",
+      "data": {
+        "humidity": 44.6
+      }
+    },
+    {
+      "sensorUid": "esp32_multi1_rain",
+      "type": "RAIN",
+      "data": {
+        "rain_detected": true
+      }
+    }
+  ],
+  "sequenceNumber": 25,
+  "sourceIp": "192.168.4.3",
+  "rssi": -37,
+  "rawData": {
+    "dev_id": "esp32_multi1",
+    "timestamp": 78,
+    "dev_ip": "192.168.4.3",
+    "seq_num": 25,
+    "packet_interval": 3,
+    "dev_status": "normal",
+    "temperature": 28.9,
+    "humidity": 44.6,
+    "rain_status": 1,
+    "rssi": -37,
+    "ssid": "ESP32_AP",
+    "checksum": 128
+  },
+  "checksum": 25
+}
+// ESP32-2: receive:
+{
+  "dev_id": "esp32_multi2",
+  "timestamp": 72,
+  "dev_ip": "192.168.4.4",
+  "seq_num": 23,
+  "packet_interval": 3,
+  "dev_status": "normal",
+  "gas_level": 686,
+  "light_level": 55,
+  "rssi": -44,
+  "ssid": "ESP32_AP",
+  "checksum": 15
+}
+// sent:
+{
+  "deviceUid": "GATEWAY-001",
+  "timestamp": 1764255159237,
+  "sensors": [
+    {
+      "sensorUid": "esp32_multi2_mq2",
+      "type": "GAS_LPG",
+      "data": {
+        "gas_level": 686
+      }
+    },
+    {
+      "sensorUid": "esp32_multi2_ldr",
+      "type": "LIGHT",
+      "data": {
+        "light_level": 55
+      }
+    }
+  ],
+  "sequenceNumber": 23,
+  "sourceIp": "192.168.4.4",
+  "rssi": -44,
+  "rawData": {
+    "dev_id": "esp32_multi2",
+    "timestamp": 72,
+    "dev_ip": "192.168.4.4",
+    "seq_num": 23,
+    "packet_interval": 3,
+    "dev_status": "normal",
+    "gas_level": 686,
+    "light_level": 55,
+    "rssi": -44,
+    "ssid": "ESP32_AP",
+    "checksum": 15
+  },
+  "checksum": 187
+}
+// esp32-3: receive:
+{
+  "dev_id": "esp32_multi3",
+  "timestamp": 93,
+  "dev_ip": "192.168.4.2",
+  "seq_num": 30,
+  "packet_interval": 3,
+  "dev_status": "normal",
+  "temperature": 27.6,
+  "humidity": 41,
+  "gas_level": 575,
+  "rssi": -34,
+  "ssid": "ESP32_AP",
+  "checksum": 134
+}
+// sent:
+{
+  "deviceUid": "GATEWAY-001",
+  "timestamp": 1764255160911,
+  "sensors": [
+    {
+      "sensorUid": "esp32_multi3_dht_temp",
+      "type": "TEMPERATURE",
+      "data": {
+        "temperature": 27.6
+      }
+    },
+    {
+      "sensorUid": "esp32_multi3_dht_hum",
+      "type": "HUMIDITY",
+      "data": {
+        "humidity": 41
+      }
+    },
+    {
+      "sensorUid": "esp32_multi3_mq2",
+      "type": "GAS_LPG",
+      "data": {
+        "gas_level": 575
+      }
+    }
+  ],
+  "sequenceNumber": 30,
+  "sourceIp": "192.168.4.2",
+  "rssi": -34,
+  "rawData": {
+    "dev_id": "esp32_multi3",
+    "timestamp": 93,
+    "dev_ip": "192.168.4.2",
+    "seq_num": 30,
+    "packet_interval": 3,
+    "dev_status": "normal",
+    "temperature": 27.6,
+    "humidity": 41,
+    "gas_level": 575,
+    "rssi": -34,
+    "ssid": "ESP32_AP",
+    "checksum": 134
+  },
+  "checksum": 71
+}
