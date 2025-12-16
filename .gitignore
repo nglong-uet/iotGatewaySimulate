@@ -1,0 +1,4 @@
+# Large data / logs
+*.csv
+*.log
+gateway/script2/*.csv
